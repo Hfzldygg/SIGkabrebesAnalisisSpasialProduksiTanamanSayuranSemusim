@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SIG Brebes — Analisis Spasial</title>
+
+    <link href="style.css" rel="stylesheet" />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(180deg, #145a32, #1e7d41, #43a047);
+        color: white;
+        overflow-x: hidden;
+        padding-top: 95px;
+      }
+
+      section {
+        padding: 90px 70px;
+      }
+
+      .fade-up {
+        opacity: 0;
+        transform: translateY(40px);
+        animation: fadeUp 1.1s forwards;
+      }
+
+      @keyframes fadeUp {
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      :root {
+        --glass-border: rgba(255, 255, 255, 0.25);
+      }
+
+      /* NAVBAR */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 16px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--glass-border);
+        z-index: 999;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-weight: 700;
+        white-space: nowrap;
+      }
+
+      .brand img {
+        width: 38px;
+        height: 38px;
+      }
+
+      .menu {
+        display: flex;
+        gap: 28px;
+      }
+
+      .menu a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 8px;
+      }
+
+      .menu a:hover {
+        background: rgba(255, 255, 255, 0.25);
+      }
+
+      /* HERO */
+      .hero {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 70px;
+        padding-top: 120px;
+        margin-bottom: 120px;
+      }
+
+      .hero h1 {
+        font-size: 3.2rem;
+        line-height: 1.15;
+      }
+
+      .lead {
+        margin-top: 16px;
+        font-size: 1.1rem;
+      }
+
+      .cta {
+        margin-top: 30px;
+        padding: 13px 42px;
+        background: linear-gradient(135deg, #c8e6c9, #a5d6a7);
+        color: #1b5e20;
+        border-radius: 12px;
+        border: none;
+        font-weight: 700;
+        cursor: pointer;
+      }
+
+      .card img {
+        width: 100%;
+        max-width: 420px;
+        border-radius: 18px;
+        animation: float 3.5s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        50% {
+          transform: translateY(-12px);
+        }
+      }
+
+      /* NEWS */
+      .news {
+        max-width: 1200px;
+        margin: auto;
+      }
+
+      .news-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 30px;
+        margin-top: 40px;
+      }
+
+      .news-card {
+        background: rgba(255, 255, 255, 0.18);
+        border-radius: 18px;
+        overflow: hidden;
+        border: 1px solid var(--glass-border);
+      }
+
+      .news-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+
+      .news-content {
+        padding: 22px;
+      }
+
+      .news-content a {
+        color: #c8e6c9;
+        font-weight: 600;
+        text-decoration: none;
+      }
+
+      footer {
+        background: #0f3a1e;
+        padding: 40px;
+        text-align: center;
+        margin-top: 80px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="nav">
+      <div class="brand">
+        <img src="logokabbrebes.png" />
+        <span>Pertanian Kabupaten Brebes</span>
+      </div>
+
+      <nav class="menu">
+        <a href="index.html">Beranda</a>
+        <a href="pendahuluan.html">Pendahuluan</a>
+        <a href="analisis.html">Analisis</a>
+        <a href="data.html">Data</a>
+        <a href="tabel.html">Tabel</a>
+        <a href="peta.html">Peta</a>
+        <a href="kesimpulan.html">Kesimpulan</a>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero fade-up">
+      <div>
+        <h1>Analisis Spasial Produksi<br />Tanaman Sayuran Semusim</h1>
+        <p class="lead">
+          Kabupaten Brebes Tahun 2023–2024 Menggunakan Sistem Informasi
+          Geografis
+        </p>
+        <button class="cta">Mulai</button>
+      </div>
+
+      <aside class="card">
+        <img src="petani.png" />
+      </aside>
+    </section>
+
+    <!-- BERITA -->
+    <section class="news fade-up">
+      <h2>Berita & Informasi Pertanian</h2>
+      <p>
+        Informasi terkini mengenai produksi dan kondisi pertanian Kabupaten
+        Brebes.
+      </p>
+
+      <div class="news-grid">
+        <div class="news-card">
+          <img src="foto1.webp" />
+          <div class="news-content">
+            <span>📅 Januari 2024</span>
+            <h3>Produksi Sayuran Meningkat di Wilayah Selatan</h3>
+            <p>Data BPS menunjukkan peningkatan produksi hortikultura.</p>
+            <a href="#">Baca selengkapnya →</a>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <img src="foto2.png" />
+          <div class="news-content">
+            <span>📅 Juli 2024</span>
+            <h3>Peran Petani Lokal Menjaga Produksi</h3>
+            <p>Petani menjadi faktor utama keberlanjutan pertanian.</p>
+            <a href="#">Baca selengkapnya →</a>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <img src="foto3.png" />
+          <div class="news-content">
+            <span>📅 Februari 2025</span>
+            <h3>Pemanfaatan SIG untuk Perencanaan Pertanian</h3>
+            <p>SIG digunakan sebagai dasar kebijakan pertanian daerah.</p>
+            <a href="#">Baca selengkapnya →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2025 Sistem Informasi Geografis Kabupaten Brebes</footer>
+  </body>
+</html>

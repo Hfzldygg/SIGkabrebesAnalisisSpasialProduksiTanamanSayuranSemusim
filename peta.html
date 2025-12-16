@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Peta Produksi Pertanian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(180deg, #2e7d32, #43a047, #66bb6a);
+        padding-top: 100px;
+        color: #333;
+      }
+
+      /* ===== NAVBAR ===== */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(180deg, #0f3d22, #145a32);
+        z-index: 999;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .brand img {
+        width: 46px;
+      }
+
+      .menu {
+        display: flex;
+        gap: 24px;
+      }
+
+      .menu a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 14px;
+        border-radius: 8px;
+        transition: 0.3s;
+      }
+
+      .menu a:hover {
+        background: rgba(255, 255, 255, 0.2);
+      }
+
+      /* ===== CONTENT ===== */
+      .container {
+        max-width: 1200px;
+        margin: auto;
+        background: white;
+        padding: 60px;
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      h2 {
+        color: #1b5e20;
+        margin-bottom: 20px;
+      }
+
+      h3 {
+        margin-top: 40px;
+        margin-bottom: 10px;
+        color: #2e7d32;
+      }
+
+      p {
+        line-height: 1.9;
+        text-align: justify;
+        margin-bottom: 14px;
+      }
+
+      .map-box {
+        margin-top: 20px;
+        border-radius: 14px;
+        overflow: hidden;
+        border: 2px solid #e0e0e0;
+      }
+
+      iframe {
+        width: 100%;
+        height: 450px;
+        border: none;
+      }
+
+      .info-box {
+        margin-top: 20px;
+        padding: 18px 22px;
+        background: #f1f8e9;
+        border-left: 6px solid #43a047;
+        border-radius: 10px;
+        font-size: 0.95rem;
+      }
+
+      /* ===== FOOTER ===== */
+      footer {
+        margin-top: 80px;
+        background: linear-gradient(180deg, #0f3d22, #145a32);
+        color: white;
+        text-align: center;
+        padding: 30px 20px;
+        font-size: 0.9rem;
+      }
+
+      @media (max-width: 900px) {
+        .nav {
+          padding: 0 25px;
+        }
+
+        .container {
+          padding: 40px 25px;
+        }
+
+        iframe {
+          height: 320px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <header class="nav">
+      <div class="brand">
+        <img src="logokabbrebes.png" alt="Logo Kabupaten Brebes" />
+        <span>Pemerintah Kabupaten Brebes</span>
+      </div>
+
+      <nav class="menu">
+        <a href="-">Beranda</a>
+        <a href="latarbelakang.html">Pendahuluan</a>
+        <a href="analisis.html">Analisis</a>
+        <a href="data.html">Data</a>
+        <a href="tabel.html">Tabel</a>
+        <a href="peta.html">Peta</a>
+        <a href="kesimpulan.html">Kesimpulan</a>
+      </nav>
+    </header>
+
+    <!-- ===== CONTENT ===== -->
+    <section class="container">
+      <h2>Peta Persebaran Produksi Tanaman Sayuran dan Buah-Buahan Semusim</h2>
+
+      <p>
+        Peta berikut menampilkan hasil analisis spasial produksi tanaman sayuran
+        dan buah-buahan semusim di Kabupaten Brebes. Pemetaan dilakukan
+        menggunakan perangkat lunak QGIS dengan mengintegrasikan data produksi
+        pertanian dan batas administrasi kecamatan.
+      </p>
+
+      <!-- ===== MAP 2023 ===== -->
+      <h3>Peta Produksi Tahun 2023</h3>
+      <p>
+        Peta tahun 2023 menunjukkan variasi tingkat produksi antar kecamatan
+        yang dipengaruhi oleh luas lahan panen dan kondisi geografis wilayah.
+        Kecamatan dengan produksi tinggi umumnya berada pada wilayah dengan
+        sistem irigasi yang baik.
+      </p>
+
+      <div class="map-box">
+        <iframe src="produksi_sayuran_2023/index.html" loading="lazy"></iframe>
+      </div>
+
+      <div class="info-box">
+        Klasifikasi warna pada peta menunjukkan tingkat produksi dalam satuan
+        kuintal. Warna semakin gelap menunjukkan produksi yang lebih tinggi
+        dibandingkan wilayah lainnya.
+      </div>
+
+      <!-- ===== MAP 2024 ===== -->
+      <h3>Peta Produksi Tahun 2024</h3>
+      <p>
+        Peta tahun 2024 digunakan untuk melihat perubahan dan tren produksi
+        pertanian dibandingkan tahun sebelumnya. Beberapa wilayah menunjukkan
+        peningkatan produksi, sementara wilayah lain mengalami penurunan yang
+        dipengaruhi oleh faktor iklim dan pola tanam.
+      </p>
+
+      <div class="map-box">
+        <iframe src="produksi_sayuran_2024/index.html" loading="lazy"></iframe>
+      </div>
+
+      <div class="info-box">
+        Perbandingan peta tahun 2023 dan 2024 memberikan gambaran spasial yang
+        jelas mengenai dinamika produksi pertanian di Kabupaten Brebes dan dapat
+        digunakan sebagai dasar pengambilan kebijakan.
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      © 2025 Pemerintah Kabupaten Brebes | Sistem Informasi Geografis Produksi
+      Pertanian
+    </footer>
+  </body>
+</html>

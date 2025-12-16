@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Data Penelitian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ===== GLOBAL ===== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(180deg, #2e7d32, #43a047, #66bb6a);
+        color: #333;
+        min-height: 100vh;
+        padding-top: 100px; /* agar tidak ketutup navbar */
+      }
+
+      /* ===== NAVBAR ===== */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(180deg, #0f3d22, #145a32);
+        z-index: 999;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+      }
+
+      .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+
+      .nav-brand img {
+        width: 46px;
+        height: 46px;
+        object-fit: contain;
+      }
+
+      .nav-menu {
+        display: flex;
+        gap: 26px;
+      }
+
+      .nav-menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 10px;
+        transition: 0.25s;
+      }
+
+      .nav-menu a:hover,
+      .nav-menu a.active {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      /* ===== CONTENT ===== */
+      .section-target {
+        max-width: 1100px;
+        margin: auto;
+        background: white;
+        padding: 60px 70px;
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+
+      .section-target h2 {
+        font-size: 2rem;
+        color: #1b5e20;
+        margin-bottom: 20px;
+      }
+
+      .section-target h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: #2e7d32;
+        font-size: 1.2rem;
+      }
+
+      .section-target p {
+        text-align: justify;
+        line-height: 1.9;
+        margin-bottom: 14px;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 900px) {
+        .nav {
+          padding: 0 25px;
+        }
+
+        .nav-menu {
+          gap: 12px;
+        }
+
+        .section-target {
+          padding: 40px 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="nav">
+      <div class="nav-brand">
+        <img src="logokabbrebes.png" alt="Logo" />
+        <span style="color: white">Pemerintah Kabupaten Brebes</span>
+      </div>
+
+      <div class="nav-menu">
+        <a href="-">Beranda</a>
+        <a href="latarbelakang.html">Pendahuluan</a>
+        <a href="analisis.html">Analisis</a>
+        <a href="data.html">Data</a>
+        <a href="tabel.html">Tabel</a>
+        <a href="peta.html">Peta</a>
+        <a href="kesimpulan.html">Kesimpulan</a>
+      </nav>
+    </nav>
+
+    <!-- ===== ISI DATA ===== -->
+    <section id="data" class="section-target">
+      <h2>Data Penelitian</h2>
+
+      <p>
+        Penelitian ini menggunakan data yang diperoleh dari berbagai sumber
+        resmi dan relevan untuk mendukung analisis spasial produksi tanaman
+        sayuran dan buah-buahan semusim di Kabupaten Brebes. Data yang digunakan
+        disusun dan diolah secara sistematis agar mampu menggambarkan kondisi
+        produksi pertanian secara spasial pada periode tahun 2023–2024.
+      </p>
+
+      <h3>Jenis dan Karakteristik Data</h3>
+      <p>
+        Data yang digunakan dalam penelitian ini terdiri atas data spasial dan
+        data nonspasial. Data spasial berupa peta administrasi Kabupaten Brebes
+        tingkat kecamatan yang digunakan sebagai dasar pemetaan. Sementara itu,
+        data nonspasial berupa data produksi tanaman sayuran dan buah-buahan
+        semusim yang memuat informasi jumlah produksi dan luas panen pada
+        masing- masing wilayah.
+      </p>
+
+      <h3>Sumber Data</h3>
+      <p>
+        Data produksi pertanian diperoleh dari publikasi resmi Dinas Pertanian
+        Kabupaten Brebes dan Badan Pusat Statistik Kabupaten Brebes tahun 2023
+        dan 2024. Data spasial administrasi wilayah diperoleh dari sumber data
+        geospasial resmi yang telah disesuaikan dengan kebutuhan penelitian.
+        Seluruh data yang digunakan merupakan data sekunder yang telah melalui
+        proses verifikasi oleh instansi terkait.
+      </p>
+
+      <h3>Pengumpulan Data</h3>
+      <p>
+        Pengumpulan data dilakukan melalui studi dokumentasi terhadap laporan,
+        publikasi statistik, dan data geospasial yang tersedia. Metode ini
+        dipilih karena data yang dibutuhkan bersifat agregat wilayah dan telah
+        terdokumentasi secara resmi, sehingga dapat digunakan secara langsung
+        dalam analisis spasial.
+      </p>
+
+      <h3>Pengolahan Data</h3>
+      <p>
+        Pengolahan data dilakukan menggunakan perangkat lunak QGIS. Data spasial
+        dan data atribut terlebih dahulu disesuaikan sistem koordinatnya,
+        kemudian dilakukan penggabungan data atribut ke dalam peta administrasi
+        kecamatan. Selanjutnya, data produksi diklasifikasikan berdasarkan
+        tingkat produksi untuk menghasilkan peta tematik yang menggambarkan
+        variasi produksi antar wilayah.
+      </p>
+
+      <h3>Penyajian Data</h3>
+      <p>
+        Data hasil pengolahan disajikan dalam bentuk tabel dan peta tematik
+        untuk mempermudah analisis dan interpretasi. Peta tematik digunakan
+        untuk menunjukkan pola persebaran produksi tanaman sayuran dan
+        buah-buahan semusim di setiap kecamatan, sehingga perbedaan antar
+        wilayah dapat diamati secara visual.
+      </p>
+
+      <h3>Keandalan Data</h3>
+      <p>
+        Keandalan data dijaga dengan menggunakan sumber data resmi serta
+        melakukan pengecekan kesesuaian antara data atribut dan data spasial.
+        Langkah ini dilakukan untuk meminimalkan kesalahan pemetaan dan
+        memastikan bahwa data yang digunakan layak untuk dianalisis secara
+        ilmiah.
+      </p>
+    </section>
+  </body>
+</html>

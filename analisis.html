@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Analisis Penelitian</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ===== GLOBAL ===== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(180deg, #2e7d32, #43a047, #66bb6a);
+        min-height: 100vh;
+        padding-top: 100px;
+      }
+
+      /* ===== NAVBAR ===== */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(180deg, #0f3d22, #145a32);
+        z-index: 999;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+      }
+
+      .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+
+      .nav-brand img {
+        width: 46px;
+        height: 46px;
+        object-fit: contain;
+      }
+
+      .nav-menu {
+        display: flex;
+        gap: 26px;
+      }
+
+      .nav-menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 10px;
+        transition: 0.25s;
+      }
+
+      .nav-menu a:hover,
+      .nav-menu a.active {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      /* ===== CONTENT ===== */
+      .section-target {
+        max-width: 1100px;
+        margin: auto;
+        background: white;
+        padding: 60px 70px;
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+        color: #333;
+      }
+
+      .section-target h2 {
+        font-size: 2rem;
+        color: #1b5e20;
+        margin-bottom: 20px;
+      }
+
+      .section-target h3 {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: #2e7d32;
+        font-size: 1.2rem;
+      }
+
+      .section-target p {
+        text-align: justify;
+        line-height: 1.9;
+        margin-bottom: 14px;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 900px) {
+        .nav {
+          padding: 0 25px;
+        }
+
+        .nav-menu {
+          gap: 12px;
+        }
+
+        .section-target {
+          padding: 40px 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="nav">
+      <div class="nav-brand">
+        <img src="logokabbrebes.png" alt="Logo" />
+        <span>Pertanian Kabupaten Brebes</span>
+      </div>
+
+      <div class="nav-menu">
+        <a href="index.html">Beranda</a>
+        <a href="pendahuluan.html">Pendahuluan</a>
+        <a href="analisis.html">Analisis</a>
+        <a href="data.html">Data</a>
+        <a href="tabel.html">Tabel</a>
+        <a href="peta.html">Peta</a>
+        <a href="kesimpulan.html">Kesimpulan</a>
+      </nav>
+    </nav>
+
+    <!-- ===== ISI ANALISIS ===== -->
+    <section id="analisis" class="section-target">
+      <h2>Analisis Data dan Pembahasan</h2>
+
+      <p>
+        Analisis data pada penelitian ini dilakukan untuk mengkaji pola spasial
+        produksi tanaman sayuran dan buah-buahan semusim di Kabupaten Brebes
+        selama periode tahun 2023–2024. Analisis dilakukan dengan memanfaatkan
+        Sistem Informasi Geografis (SIG) menggunakan perangkat lunak QGIS
+        sebagai alat utama pengolahan, visualisasi, dan interpretasi data
+        spasial.
+      </p>
+
+      <h3>1. Gambaran Umum Sistem Cerdas Berbasis SIG</h3>
+      <p>
+        Sistem yang dibangun merupakan sistem cerdas berbasis SIG yang mampu
+        mengintegrasikan data atribut produksi pertanian dengan data spasial
+        wilayah administrasi kecamatan di Kabupaten Brebes. Sistem ini dirancang
+        untuk membantu analisis, pemetaan, serta pengambilan keputusan dalam
+        pengelolaan sektor pertanian secara lebih efektif dan berbasis lokasi.
+      </p>
+
+      <h3>2. Sumber dan Pengolahan Data</h3>
+      <p>
+        Data yang digunakan dalam penelitian ini meliputi data produksi tanaman
+        sayuran dan buah-buahan semusim tahun 2023–2024 yang diperoleh dari
+        instansi terkait, serta data peta administrasi Kabupaten Brebes dalam
+        format shapefile. Pengolahan data dilakukan menggunakan QGIS melalui
+        proses input data, penggabungan atribut (join), serta pengelompokan
+        nilai produksi berdasarkan jenis komoditas dan wilayah kecamatan.
+      </p>
+
+      <h3>3. Analisis Spasial Menggunakan QGIS</h3>
+      <p>
+        Analisis spasial dilakukan dengan memanfaatkan fitur QGIS seperti
+        symbology, classify, dan overlay untuk memvisualisasikan tingkat
+        produksi tanaman pada masing-masing kecamatan. Hasil pemetaan
+        menunjukkan adanya variasi produksi yang cukup signifikan antar wilayah,
+        yang dipengaruhi oleh kondisi geografis, luas lahan pertanian, serta
+        sistem irigasi.
+      </p>
+
+      <h3>4. Pola Persebaran Produksi Tanaman</h3>
+      <p>
+        Berdasarkan hasil analisis spasial, wilayah dengan tingkat produksi
+        tinggi cenderung terkonsentrasi pada kecamatan yang memiliki lahan
+        pertanian produktif dan akses air yang memadai. Sebaliknya, kecamatan
+        dengan produksi rendah umumnya berada pada wilayah dengan keterbatasan
+        lahan atau faktor lingkungan tertentu. Pola ini menunjukkan adanya
+        hubungan kuat antara lokasi geografis dan produktivitas pertanian.
+      </p>
+
+      <h3>5. Analisis Temporal Tahun 2023–2024</h3>
+      <p>
+        Perbandingan data produksi antara tahun 2023 dan 2024 menunjukkan adanya
+        peningkatan dan penurunan produksi pada beberapa komoditas tertentu.
+        Analisis temporal ini membantu mengidentifikasi tren perubahan produksi
+        serta wilayah yang mengalami perkembangan maupun penurunan kinerja
+        sektor pertanian dari waktu ke waktu.
+      </p>
+
+      <h3>6. Implementasi Sistem Cerdas dalam Pengambilan Keputusan</h3>
+      <p>
+        Sistem cerdas berbasis SIG ini memungkinkan pengguna untuk mengakses
+        informasi spasial secara interaktif melalui tampilan peta dan data
+        atribut. Informasi yang dihasilkan dapat digunakan oleh pemerintah
+        daerah sebagai dasar perencanaan kebijakan pertanian, penentuan
+        prioritas pengembangan wilayah, serta optimalisasi distribusi sumber
+        daya pertanian.
+      </p>
+
+      <h3>7. Kelebihan Penggunaan QGIS</h3>
+      <p>
+        Penggunaan QGIS sebagai perangkat lunak open source memberikan kelebihan
+        dalam fleksibilitas, kemudahan pengolahan data, serta kemampuan
+        visualisasi peta yang informatif. Selain itu, QGIS mendukung analisis
+        spasial lanjutan yang dapat dikembangkan menjadi sistem pendukung
+        keputusan berbasis web.
+      </p>
+
+      <h3>8. Keterbatasan Penelitian</h3>
+      <p>
+        Keterbatasan penelitian ini terletak pada ketersediaan data produksi
+        yang bersifat agregat dan belum mencakup seluruh variabel pendukung
+        seperti curah hujan dan kualitas tanah. Oleh karena itu, pengembangan
+        sistem di masa mendatang diharapkan dapat mengintegrasikan data yang
+        lebih lengkap untuk menghasilkan analisis yang lebih akurat.
+      </p>
+
+      <h3>9. Kesimpulan Analisis</h3>
+      <p>
+        Berdasarkan hasil analisis spasial menggunakan QGIS, dapat disimpulkan
+        bahwa produksi tanaman sayuran dan buah-buahan semusim di Kabupaten
+        Brebes memiliki pola persebaran yang tidak merata antar wilayah. Sistem
+        cerdas berbasis SIG terbukti efektif dalam menyajikan informasi spasial
+        yang mendukung analisis dan pengambilan keputusan di bidang pertanian.
+      </p>
+    </section>
+  </body>
+</html>

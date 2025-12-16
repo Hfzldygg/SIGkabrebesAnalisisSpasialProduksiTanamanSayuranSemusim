@@ -1,0 +1,252 @@
+/* ================= GLOBAL ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --glass-border: rgba(255, 255, 255, 0.25);
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(180deg, #2e7d32, #43a047, #66bb6a);
+  color: white;
+  min-height: 100vh;
+  padding-top: 100px; /* aman dari navbar */
+}
+
+/* ================= NAVBAR ================= */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  padding: 0 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(180deg, #0f3d22, #145a32);
+  z-index: 999;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* BRAND */
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-brand img {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.nav-brand span {
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  color: #fff;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+}
+
+/* MENU */
+.nav-menu {
+  display: flex;
+  gap: 26px;
+}
+
+.nav-menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: 10px;
+  transition: 0.25s;
+}
+
+.nav-menu a:hover {
+  background: rgba(255, 255, 255, 0.18);
+  transform: translateY(-2px);
+}
+
+/* ================= HERO ================= */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 60px 40px;
+  gap: 50px;
+  margin-bottom: 120px; /* 🔥 INI KUNCINYA */
+}
+
+.hero .left {
+  max-width: 600px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.hero .lead {
+  margin-top: 12px;
+  font-size: 1.05rem;
+  opacity: 0.9;
+}
+
+.cta {
+  margin-top: 30px;
+  padding: 12px 32px;
+  background: white;
+  border: none;
+  border-radius: 12px;
+  color: #2e7d32;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: 0.25s;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+  background: #e8f5e9;
+}
+
+/* HERO IMAGE */
+.card {
+  max-width: 420px;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 18px;
+  display: block;
+}
+
+/* ================= SECTION ================= */
+.section-target {
+  padding: 80px 60px;
+}
+
+.section-target h2 {
+  font-size: 1.8rem;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+/* ================= BERITA ================= */
+.news {
+  padding: 90px 60px;
+}
+
+.news-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.news h2 {
+  font-size: 2.4rem;
+  margin-bottom: 18px;
+}
+
+.news p.desc {
+  max-width: 750px;
+  opacity: 0.95;
+}
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 40px;
+}
+
+.news-card {
+  background: rgba(255, 255, 255, 0.22);
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+  transition: 0.35s;
+}
+
+.news-card:hover {
+  transform: translateY(-8px);
+  background: rgba(255, 255, 255, 0.28);
+}
+
+.news-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  display: block;
+}
+
+.news-content {
+  padding: 22px;
+}
+
+.news-content span {
+  font-size: 0.85rem;
+  opacity: 0.85;
+}
+
+.news-content h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.news-content p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.95;
+}
+
+.news-content a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #c8e6c9;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* ================= FOOTER ================= */
+footer {
+  background: #0f3a1e;
+  padding: 40px;
+  text-align: center;
+  margin-top: 80px;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 900px) {
+  .nav {
+    padding: 0 25px;
+  }
+
+  .nav-menu {
+    gap: 14px;
+  }
+
+  .nav-menu a {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+
+  .hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .news,
+  .section-target {
+    padding: 70px 25px;
+  }
+}

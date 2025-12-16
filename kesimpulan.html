@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Kesimpulan</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- FONT -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      /* ===== GLOBAL ===== */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(180deg, #2e7d32, #43a047, #66bb6a);
+        min-height: 100vh;
+        padding-top: 100px;
+        color: #333;
+      }
+
+      /* ===== NAVBAR ===== */
+      .nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 90px;
+        padding: 0 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: linear-gradient(180deg, #0f3d22, #145a32);
+        z-index: 999;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+      }
+
+      .nav-brand {
+        display: flex;
+        align-items: center;
+        gap: 14px;
+        color: white;
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        text-transform: uppercase;
+      }
+
+      .nav-brand img {
+        width: 46px;
+        height: 46px;
+        object-fit: contain;
+      }
+
+      .nav-menu {
+        display: flex;
+        gap: 26px;
+      }
+
+      .nav-menu a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+        padding: 8px 16px;
+        border-radius: 10px;
+        transition: 0.25s;
+      }
+
+      .nav-menu a:hover,
+      .nav-menu a.active {
+        background: rgba(255, 255, 255, 0.2);
+        transform: translateY(-2px);
+      }
+
+      /* ===== CONTENT ===== */
+      .section {
+        max-width: 1100px;
+        margin: auto;
+        background: white;
+        padding: 60px 70px;
+        border-radius: 18px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+      }
+
+      .section h2 {
+        font-size: 2rem;
+        color: #1b5e20;
+        margin-bottom: 25px;
+      }
+
+      .section p {
+        text-align: justify;
+        line-height: 1.9;
+        margin-bottom: 16px;
+      }
+
+      .kesimpulan-box {
+        background: #f1f8e9;
+        border-left: 6px solid #2e7d32;
+        padding: 25px 28px;
+        border-radius: 10px;
+        margin-top: 30px;
+      }
+
+      .kesimpulan-box ul {
+        margin-left: 18px;
+        margin-top: 12px;
+      }
+
+      .kesimpulan-box li {
+        margin-bottom: 10px;
+        line-height: 1.8;
+      }
+
+      .saran {
+        margin-top: 40px;
+      }
+
+      .saran h3 {
+        color: #2e7d32;
+        margin-bottom: 10px;
+      }
+
+      /* ===== FOOTER ===== */
+      footer {
+        margin-top: 60px;
+        background: linear-gradient(180deg, #145a32, #0f3d22);
+        color: white;
+        text-align: center;
+        padding: 25px 15px;
+      }
+
+      footer p {
+        font-size: 0.9rem;
+        line-height: 1.6;
+      }
+
+      /* ===== RESPONSIVE ===== */
+      @media (max-width: 900px) {
+        .nav {
+          padding: 0 25px;
+        }
+
+        .nav-menu {
+          gap: 12px;
+        }
+
+        .section {
+          padding: 40px 30px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- ===== NAVBAR ===== -->
+    <nav class="nav">
+      <div class="nav-brand">
+        <img src="logokabbrebes.png" alt="Logo Kabupaten Brebes" />
+        <span>Pemerintah Kabupaten Brebes</span>
+      </div>
+
+      <div class="nav-menu">
+        <a href="index.html">Beranda</a>
+        <a href="pendahuluan.html">Pendahuluan</a>
+        <a href="analisis.html">Analisis</a>
+        <a href="data.html">Data</a>
+        <a href="tabel.html">Tabel</a>
+        <a href="peta.html">Peta</a>
+        <a href="kesimpulan.html" class="active">Kesimpulan</a>
+      </div>
+    </nav>
+
+    <!-- ===== ISI KESIMPULAN ===== -->
+    <section class="section">
+      <h2>Kesimpulan</h2>
+
+      <p>
+        Berdasarkan hasil analisis spasial produksi tanaman sayuran semusim di
+        Kabupaten Brebes tahun 2023–2024 menggunakan Sistem Informasi Geografis
+        (SIG), dapat disimpulkan bahwa terdapat perbedaan tingkat produksi yang
+        cukup signifikan antar kecamatan. Perbedaan tersebut menunjukkan adanya
+        pengaruh kondisi geografis, luas lahan pertanian, serta pola pengelolaan
+        pertanian terhadap tingkat produksi tanaman sayuran.
+      </p>
+
+      <p>
+        Penerapan SIG dengan memanfaatkan perangkat lunak QGIS terbukti efektif
+        dalam mengintegrasikan data spasial dan data atribut, sehingga mampu
+        menyajikan informasi produksi tanaman sayuran semusim dalam bentuk peta
+        tematik yang informatif dan mudah dipahami. Visualisasi spasial ini
+        memberikan gambaran yang lebih komprehensif dibandingkan penyajian data
+        dalam bentuk tabel semata.
+      </p>
+
+      <div class="kesimpulan-box">
+        <strong
+          >Kesimpulan utama yang diperoleh dari penelitian ini adalah:</strong
+        >
+        <ul>
+          <li>
+            Produksi tanaman sayuran semusim di Kabupaten Brebes memiliki pola
+            persebaran yang tidak merata antar kecamatan.
+          </li>
+          <li>
+            Beberapa kecamatan menunjukkan tingkat produksi tinggi secara
+            konsisten, sedangkan kecamatan lainnya mengalami fluktuasi produksi
+            pada periode 2023–2024.
+          </li>
+          <li>
+            Sistem Informasi Geografis efektif digunakan sebagai alat analisis
+            dan visualisasi data pertanian berbasis lokasi.
+          </li>
+          <li>
+            Penyajian hasil analisis dalam bentuk Web GIS meningkatkan
+            aksesibilitas informasi bagi pemerintah daerah dan masyarakat.
+          </li>
+        </ul>
+      </div>
+
+      <div class="saran">
+        <h3>Saran</h3>
+        <p>
+          Untuk pengembangan selanjutnya, disarankan agar penelitian ini dapat
+          mengintegrasikan variabel pendukung lainnya seperti curah hujan, jenis
+          tanah, dan sistem irigasi agar analisis spasial yang dihasilkan
+          menjadi lebih komprehensif. Selain itu, pemutakhiran data secara
+          berkala dan pengembangan fitur analisis lanjutan pada Web GIS dapat
+          meningkatkan kualitas sistem sebagai alat pendukung pengambilan
+          keputusan di bidang pertanian.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+      <p>
+        © 2024 Pemerintah Kabupaten Brebes <br />
+        Analisis Spasial Produksi Tanaman Sayuran Semusim Menggunakan Sistem
+        Informasi Geografis (SIG)
+      </p>
+    </footer>
+  </body>
+</html>
